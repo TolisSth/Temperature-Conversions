@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 //Copyright 2023 Apostolos Halis <tolishalis@gmail.com>
 //Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 //documentation files (the "Software"), to deal in the Software without restriction, including without limitation the
@@ -12,6 +14,8 @@ public class Conversions {
     private double celcius;
     private double fahrenheit;
     private double kelvin;
+
+
 
     public double celciusToFahrenheit(){
        double result = (celcius * 9/5) + 32;
