@@ -8,4 +8,4 @@
 <li>Kelvin to Celsius</li>
 <li>Kelvin to Fahrenheit</li>
 </ul>
-<p>It is still work in progress so you can expect certain features added.</p>
+<p>The assignmen's feautres are done but the program is still work in progress,because I want to expand it, so you can expect certain features added.</p>
