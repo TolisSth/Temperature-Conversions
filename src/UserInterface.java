@@ -17,8 +17,7 @@ public class UserInterface extends JFrame {
     private String toConvertOption;
     private String convertedOption;
     private double conv1;
-    private double conv2;
-    private String availableConversions[] = {"Celcius", "Fahrenheit", "Kelvin"};
+    private String availableConversions[] = {"Celsius", "Fahrenheit", "Kelvin"};
 
     public UserInterface(){
         //setting up the necessary conditions for the app to work
@@ -75,25 +74,25 @@ public class UserInterface extends JFrame {
                 //doing this so I don't have to check two thing in the if statement
                 String joinedConversions = toConvertOption + convertedOption;
 
-               if(joinedConversions.equals("CelciusFahrenheit")){
+               if(joinedConversions.equals("CelsiusFahrenheit")){
                   Conversions conversion = new Conversions(conv1, 0.0, 0.0);
-                  double result = conversion.celciusToFahrenheit();
+                  double result = conversion.celsiusToFahrenheit();
                   converted.setText(Double.toString(result));
-               } else if (joinedConversions.equals("CelciusKelvin")) {
+               } else if (joinedConversions.equals("CelsiusKelvin")) {
                    Conversions conversion = new Conversions(conv1, 0,0);
-                   double result = conversion.celciusToKelvin();
+                   double result = conversion.celsiusToKelvin();
                    converted.setText(Double.toString(result));
-               } else if (joinedConversions.equals("FahrenheitCelcius")) {
+               } else if (joinedConversions.equals("FahrenheitCelsius")) {
                    Conversions conversion = new Conversions(0, conv1,0);
-                   double result = conversion.fahrenheitToCelcius();
+                   double result = conversion.fahrenheitToCelsius();
                    converted.setText(Double.toString(result));
                 }else if (joinedConversions.equals("FahrenheitKelvin")){
                    Conversions conversions = new Conversions(0, conv1, 0);
                    double result = conversions.fahrenheitToKelvin();
                    converted.setText(Double.toString(result));
-               } else if (joinedConversions.equals("KelvinCelcius")) {
+               } else if (joinedConversions.equals("KelvinCelsius")) {
                     Conversions conversions = new Conversions(0, 0, conv1);
-                    double result = conversions.kelvinToCelcius();
+                    double result = conversions.kelvinToCelsius();
                     converted.setText(Double.toString(result));
                } else if (joinedConversions.equals("KelvinFahrenheit")) {
                     Conversions conversions = new Conversions(0, 0, conv1);
